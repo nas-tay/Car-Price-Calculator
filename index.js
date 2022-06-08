@@ -14,7 +14,7 @@ let arr = [],
     result = document.querySelector(".result"),
     resultText = document.querySelector(".resultText");
 
-//Создаем и списки моделей автомобилей
+//Создаем списки моделей автомобилей
 let audiModels = ["Audi 1", "Audi 2", "Audi 3", "Audi 4", "Audi 5"];
 let bmwModels = ["BMW 1", "BMW 2", "BMW 3", "BMW 4", "BMW 5"];
 let mercedesModels = [
@@ -26,7 +26,7 @@ let mercedesModels = [
 ];
 let fordModels = ["Ford 1", "Ford 2", "Ford 3", "Ford 4", "Ford 5"];
 
-//Выводим писки моделей авто в соответствии с выбранной маркой
+//Выводим списки моделей авто в соответствии с выбранной маркой
 function selectBrand(sender) {
     if (sender.options[sender.selectedIndex].value == "none") {
         document.querySelector("#model").style.display = "none";
@@ -68,7 +68,7 @@ function selectBrand(sender) {
     }
 }
 
-//Задаем значения(стоимость) моделей и присваеваем их первому элементу главного массива
+//Задаем значения(стоимость) моделей и присваиваем их первому элементу главного массива
 model.addEventListener("change", () => {
     switch (model.value) {
         case "Audi 1":
