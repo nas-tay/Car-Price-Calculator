@@ -15,16 +15,16 @@ let arr = [],
     resultText = document.querySelector(".resultText");
 
 //Создаем списки моделей автомобилей
-let audiModels = ["Audi 1", "Audi 2", "Audi 3", "Audi 4", "Audi 5"];
-let bmwModels = ["BMW 1", "BMW 2", "BMW 3", "BMW 4", "BMW 5"];
+let audiModels = ["Audi 5", "Audi 4", "Audi 3", "Audi 2", "Audi 1"];
+let bmwModels = ["BMW 5", "BMW 4", "BMW 3", "BMW 2", "BMW 1"];
 let mercedesModels = [
-    "Mercedes 1",
-    "Mercedes 2",
-    "Mercedes 3",
-    "Mercedes 4",
     "Mercedes 5",
+    "Mercedes 4",
+    "Mercedes 3",
+    "Mercedes 2",
+    "Mercedes 1",
 ];
-let fordModels = ["Ford 1", "Ford 2", "Ford 3", "Ford 4", "Ford 5"];
+let fordModels = ["Ford 5", "Ford 4", "Ford 3", "Ford 2", "Ford 1"];
 
 //Выводим списки моделей авто в соответствии с выбранной маркой
 function selectBrand(sender) {
@@ -103,22 +103,6 @@ model.addEventListener("change", () => {
             arr[0] = 2700000;
             break;
 
-        case "Mercedes 1":
-            arr[0] = 2500000;
-            break;
-        case "Mercedes 2":
-            arr[0] = 2800000;
-            break;
-        case "Mercedes 3":
-            arr[0] = 3000000;
-            break;
-        case "Mercedes 4":
-            arr[0] = 3200000;
-            break;
-        case "Mercedes 5":
-            arr[0] = 3500000;
-            break;
-
         case "Ford 1":
             arr[0] = 2300000;
             break;
@@ -133,6 +117,22 @@ model.addEventListener("change", () => {
             break;
         case "Ford 5":
             arr[0] = 3200000;
+            break;
+
+        case "Mercedes 1":
+            arr[0] = 2500000;
+            break;
+        case "Mercedes 2":
+            arr[0] = 2800000;
+            break;
+        case "Mercedes 3":
+            arr[0] = 3000000;
+            break;
+        case "Mercedes 4":
+            arr[0] = 3200000;
+            break;
+        case "Mercedes 5":
+            arr[0] = 3500000;
             break;
     }
 
